@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F4F7F9">
+
+<!-- Chat List -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerChat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:layout_above="@+id/inputBar"/>
+
+<!-- Input Bar -->
+<LinearLayout
+    android:id="@+id/inputBar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    android:elevation="8dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true">
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:hint="Ask anything..."
+        android:background="@drawable/bg_chat_input"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:textColorHint="#7C7C7C" />
+
+    <ImageView
+        android:id="@+id/btnSend"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:padding="8dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/btn_send_ripple"
+        android:contentDescription="Send message" />
+</LinearLayout>
+
+</RelativeLayout>
+

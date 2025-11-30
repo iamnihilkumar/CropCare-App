@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="22dp"
+android:background="#F4F7F9">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌱 Crop Diagnosis Report"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#1B5E20"
+        android:layout_marginBottom="18dp" />
+
+    <!-- Image Preview Card -->
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="@drawable/bg_card_white"
+        android:elevation="6dp"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivResultPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_scan" />
+    </LinearLayout>
+
+    <!-- Disease & Accuracy Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_white"
+        android:elevation="6dp"
+        android:padding="18dp"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:id="@+id/tvDiseaseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disease: Analyzing..."
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confidence: -"
+            android:textSize="15sp"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <!-- Result Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_white"
+        android:elevation="6dp"
+        android:padding="18dp"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝 Detailed Analysis"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Processing..."
+            android:textSize="14sp"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <Button
+        android:id="@+id/btnSaveHistory"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="💾 Save to History"
+        android:backgroundTint="#2E7D32"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="🏠 Back to Home"
+        android:backgroundTint="#66BB6A"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+</LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_cropcare_logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to continue using CropCare"
+            android:textSize="15sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:textSize="16sp"
+            android:hint="Email Address"
+            android:padding="12dp"
+            android:autoSizeTextType="uniform"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Password"
+            android:padding="12dp"
+            android:autoSizeTextType="uniform"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#4CAF50"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up"
+            android:layout_marginTop="20dp"
+            android:textColor="#4CAF50"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

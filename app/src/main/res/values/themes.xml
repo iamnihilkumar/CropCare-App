@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- App Theme -->
+<style name="Theme.CropCare" parent="Theme.Material3.Light.NoActionBar">
+    <!-- Customize your theme here -->
+    <item name="colorPrimary">@color/green</item>
+    <item name="colorPrimaryVariant">@color/green_dark</item>
+    <item name="colorOnPrimary">@android:color/white</item>
+    <item name="android:statusBarColor">@color/green_dark</item>
+</style>
+
+</resources>

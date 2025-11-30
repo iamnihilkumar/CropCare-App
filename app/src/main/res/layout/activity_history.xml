@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F4F7F9"
+android:padding="18dp">
+
+<!-- Title -->
+<TextView
+    android:id="@+id/tvHistoryHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="📄 Scan History"
+    android:textStyle="bold"
+    android:textSize="24sp"
+    android:textColor="#1B5E20"
+    android:layout_marginBottom="10dp"
+    android:fontFamily="sans-serif-medium" />
+
+<!-- RecyclerView -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerHistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tvHistoryHeader"
+    android:layout_marginTop="12dp" />
+
+<!-- Empty State (Hidden by default) -->
+<TextView
+    android:id="@+id/tvEmptyHistory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No scan history found"
+    android:textColor="#7B7B7B"
+    android:textSize="16sp"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    android:fontFamily="sans-serif" />
+
+</RelativeLayout>
+
